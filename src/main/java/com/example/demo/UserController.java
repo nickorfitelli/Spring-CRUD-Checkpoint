@@ -21,4 +21,9 @@ public class UserController {
     public User create(@RequestBody User user) {
         return this.repository.save(user);
     }
+
+    @GetMapping("/{id}")
+    public Optional<User> find(@PathVariable long id ) {
+        return this.repository.findById(id);
+    }
 }
