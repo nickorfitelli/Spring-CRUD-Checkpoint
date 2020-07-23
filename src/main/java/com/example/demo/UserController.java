@@ -13,4 +13,7 @@ public class UserController {
     public UserController(UserRepository repository) {
         this.repository = repository;
     }
+
+    @GetMapping("")
+    public Iterable<User>all(){return this.repository.findAll();}
 }
