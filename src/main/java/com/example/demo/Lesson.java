@@ -1,8 +1,5 @@
 package com.example.demo;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import javax.persistence.*;
 import java.util.Date;
 
