@@ -17,4 +17,8 @@ public class UserController {
     @GetMapping("")
     public Iterable<User>all(){return this.repository.findAll();}
 
+    @PostMapping("")
+    public User create(@RequestBody User user) {
+        return this.repository.save(user);
+    }
 }
